@@ -1,16 +1,16 @@
-declare module "react-native-rn-videoplayer" {
-  import { Component, ReactNode } from "react";
-  import { VideoProperties } from "react-native-video";
+declare module 'react-native-rn-videoplayer' {
+  import { Component, ReactNode } from 'react';
+  import { VideoProperties } from 'react-native-video';
 
   export interface VideoProps extends VideoProperties {
     url: string;
     autoPlay?: boolean;
     poster?: string;
     ref?: any;
-    lockControl: boolean;
-    moreSetting: () => ReactNode | null;
+    lockControl?: boolean;
+    moreSetting?: () => ReactNode | null;
     showSmallCont?: boolean;
-    storeComponent: () => ReactNode;
+    storeComponent?: () => ReactNode;
     speedColor?: string;
     dotColor?: string;
     dotBorderColor?: string;
@@ -28,7 +28,7 @@ declare module "react-native-rn-videoplayer" {
     onStore?: () => void;
     onMoreFun?: () => void;
 
-    onWindowChange?: (state: "full" | "small") => void;
+    onWindowChange?: (state: 'full' | 'small') => void;
 
     continuous?: boolean;
     renderAllSeenList?: () => ReactNode;
